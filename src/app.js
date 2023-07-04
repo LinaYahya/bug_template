@@ -5,6 +5,7 @@ const router = require("./router");
 const app = express();
 
 app.set("port", process.env.PORT || 8000);
+app.set('view engine', 'pug')
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
